@@ -20,12 +20,20 @@
         <div>
     <form>
         <label for="nome">Nome:</label>
-        <input type="text" id="nome">
+        <input type="text" id="nome" onkeyup="validaNome()">
+        <div id="txtNome"> </div>
+
         <label for="email">E-mail</label>
-        <input type="email" id="email">
+        <input type="email" id="email" onkeyup="validaEmail()">
+        <div id="txtEmail"></div>
+
+
         <label for="assunto">Assunto:</label>
-        <textarea name="assunto" id="assunto" cols="20" rows="10"></textarea>
-        <button>Enviar</button>
+        <textarea name="assunto" id="assunto" cols="20" rows="10" onkeyup="validaAssunto()"></textarea>
+        <div id="txtAssunto"></div>
+
+
+        <button onclick="enviar()">Enviar</button>
     </form>
     </div>
     <div class="ml-50">
@@ -38,7 +46,8 @@
     style="border:0;" 
     allowfullscreen="" 
     loading="lazy" 
-    referrerpolicy="no-referrer-when-downgrade">
+    referrerpolicy="no-referrer-when-downgrade" onmousemove="mapaZoom()" onmouseout="mapaNormal()"
+    id="mapa">
     </iframe>
     </div>
     </div>
@@ -57,6 +66,9 @@
         </div>
         <p class="center"> Cristaly Alves &copy</p>
     </footer>
+
+
+    <script src="assets/js/script.js"></script>
 
 </body>
 </html>
