@@ -1,0 +1,45 @@
+.center{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgb(181, 128, 230);
+}
+.justify{
+    text-align: justify;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.container{
+    display: flex;
+    flex-flow: row ;
+    justify-content: center;
+    align-items: center;
+}
+#menu li{
+    display: inline;
+    padding: 30px;
+}
+#menu li a {
+    text-decoration:none ;
+    color: rgb(104, 19, 184);
+    font-size: 20px;
+}
+#menu li a:hover{
+    color: black;
+}
+.p-30{
+    padding: 30px;
+}
+.br-50{
+    border-radius: 50%;
+    width: 60%;
+    height: 40%;
+}
+.tm-social{
+    width: 5%;
+    height: 5%;
+}
+.mb-50{
+    margin-bottom:50px ;
+}
+.ml-50{
+    margin-left: 50px;
+}
